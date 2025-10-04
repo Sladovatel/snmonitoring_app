@@ -1,0 +1,55 @@
+.settingspcon {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.settingscon {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--bci);
+    width: min-content;
+    padding: 1rem;
+    border-radius: 15px;
+    color: white;
+}
+
+.settingitem {
+    color: white;
+    padding: 0.5rem 1rem;
+    background: var(--bcm);
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.1s ease;
+}
+
+.settingitem:hover {
+    background: white;
+    color: var(--bcm);
+}
+
+.exit {
+    margin-top: auto;
+    background: rgb(121, 10, 10);
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.1s ease;
+}
+
+.exit:hover {
+    background: rgb(70, 6, 6);
+}
+
+@media (max-width: 750px) {
+    .settingspcon {
+        flex-direction: column;
+    }
+    .settingscon {
+        width: 100%;
+    }
+}

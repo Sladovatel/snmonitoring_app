@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>SNMonitoring - main</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Press+Start+2P&family=Ruda:wght@400..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Flowtype.js/1.1.0/flowtype.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css">
+</head>
+    <body>
+        <p id="info" style="color: white;"></p>
+        <header></header>
+        <div class="all-con">
+            <div class="all">
+                <div class="search">
+                    <input style="color: white;" class="search-txt" type="text" placeholder="Найти сервер...">
+                </div>
+                <section class="filtercon" id="filtercon">
+                    <div class="filter-text">Версии</div>
+                    <div class="slider-container">
+                        <input 
+                            type="range" 
+                            id="versionSlider" 
+                            min="0" 
+                            max="77" 
+                            value="78" 
+                            step="1"
+                        >
+                    </div>
+                    <div class="version-display">
+                        <div class="version-number" id="versionNumber">1.21</div>
+                    </div>
+                    <hr>
+                    <div class="hovertegs fc" id="tegbtn">
+                        <i class="fa-solid fa-filter fa-lg"></i>
+                    </div>
+                    <div class="fline"></div>
+                    <a href="/servers.html" class="libcon fc">
+                        <i class="fa-solid fa-inbox fa-lg"></i>
+                    </a>
+                </section>
+                <section class="tegscon" id="tegscon">
+                    <div class="tegslist">
+                        <div class="filter-text">
+                            Категории
+                        </div>
+                        <div class="tegs">
+                            <div class="teg">
+                                <input type="checkbox">
+                                выживание
+                            </div>
+                            <div class="teg">
+                                <input type="checkbox">
+                                выживание
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="filter-text">
+                            Подкатегории
+                        </div>
+                        <div class="tegs">
+                            <div class="teg">
+                                <input type="checkbox">
+                                выживание
+                            </div>
+                            <div class="teg">
+                                <input type="checkbox">
+                                выживание
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="all-content">
+                    <a class="top" href="">
+                        <div class="icon">
+                            <img src="img/12.png" alt="">
+                            <div class="gcon">
+                                <div class="tcon uinfo">
+                                    <div class="icit">1</div>
+                                </div>
+                                <div class="mcon uinfo">
+                                    <div class="icit">1.20.1</div>
+                                    <div class="icit">выживание</div>
+                                </div>
+                            </div>
+                            <div class="mcinfo">
+                                <div class="servertext">PolitBuild - военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей</div>
+                                <div class="servertegs">
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dinfo">
+                            <div>PolitBuild</div>
+                            <div class="people"><i class="fa-solid fa-user"></i>1000</div>
+                        </div>
+                    </a>
+                    <a class="top" href="">
+                        <div class="icon">
+                            <img src="img/12.png" alt="">
+                            <div class="gcon">
+                                <div class="tcon uinfo">
+                                    <div class="icit">1</div>
+                                </div>
+                                <div class="mcon uinfo">
+                                    <div class="icit">1.20.1</div>
+                                    <div class="icit">выживание</div>
+                                </div>
+                            </div>
+                            <div class="mcinfo">
+                                <div class="servertext">PolitBuild - военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей</div>
+                                <div class="servertegs">
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dinfo">
+                            <div>PolitBuild</div>
+                            <div class="people"><i class="fa-solid fa-user"></i>1000</div>
+                        </div>
+                    </a>
+                    <a class="top" href="">
+                        <div class="icon">
+                            <img src="img/12.png" alt="">
+                            <div class="gcon">
+                                <div class="tcon uinfo">
+                                    <div class="icit">1</div>
+                                </div>
+                                <div class="mcon uinfo">
+                                    <div class="icit">1.20.1</div>
+                                    <div class="icit">выживание</div>
+                                </div>
+                            </div>
+                            <div class="mcinfo">
+                                <div class="servertext">PolitBuild - военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей</div>
+                                <div class="servertegs">
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dinfo">
+                            <div>PolitBuild</div>
+                            <div class="people"><i class="fa-solid fa-user"></i>1000</div>
+                        </div>
+                    </a>
+                    <a class="top" href="">
+                        <div class="icon">
+                            <img src="img/12.png" alt="">
+                            <div class="gcon">
+                                <div class="tcon uinfo">
+                                    <div class="icit">1</div>
+                                </div>
+                                <div class="mcon uinfo">
+                                    <div class="icit">1.20.1</div>
+                                    <div class="icit">выживание</div>
+                                </div>
+                            </div>
+                            <div class="mcinfo">
+                                <div class="servertext">PolitBuild - военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей</div>
+                                <div class="servertegs">
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dinfo">
+                            <div>PolitBuild</div>
+                            <div class="people"><i class="fa-solid fa-user"></i>1000</div>
+                        </div>
+                    </a>
+                    <a class="top" href="">
+                        <div class="icon">
+                            <img src="img/12.png" alt="">
+                            <div class="gcon">
+                                <div class="tcon uinfo">
+                                    <div class="icit">1</div>
+                                </div>
+                                <div class="mcon uinfo">
+                                    <div class="icit">1.20.1</div>
+                                    <div class="icit">выживание</div>
+                                </div>
+                            </div>
+                            <div class="mcinfo">
+                                <div class="servertext">PolitBuild - военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей</div>
+                                <div class="servertegs">
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dinfo">
+                            <div>PolitBuild</div>
+                            <div class="people"><i class="fa-solid fa-user"></i>1000</div>
+                        </div>
+                    </a>
+                    <a class="top" href="">
+                        <div class="icon">
+                            <img src="img/12.png" alt="">
+                            <div class="gcon">
+                                <div class="tcon uinfo">
+                                    <div class="icit">1</div>
+                                </div>
+                                <div class="mcon uinfo">
+                                    <div class="icit">1.20.1</div>
+                                    <div class="icit">выживание</div>
+                                </div>
+                            </div>
+                            <div class="mcinfo">
+                                <div class="servertext">PolitBuild - военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей</div>
+                                <div class="servertegs">
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dinfo">
+                            <div>PolitBuild</div>
+                            <div class="people"><i class="fa-solid fa-user"></i>1000</div>
+                        </div>
+                    </a>
+                    <a class="top" href="">
+                        <div class="icon">
+                            <img src="img/12.png" alt="">
+                            <div class="gcon">
+                                <div class="tcon uinfo">
+                                    <div class="icit">1</div>
+                                </div>
+                                <div class="mcon uinfo">
+                                    <div class="icit">1.20.1</div>
+                                    <div class="icit">выживание</div>
+                                </div>
+                            </div>
+                            <div class="mcinfo">
+                                <div class="servertext">PolitBuild - военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей</div>
+                                <div class="servertegs">
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dinfo">
+                            <div>PolitBuild</div>
+                            <div class="people"><i class="fa-solid fa-user"></i>1000</div>
+                        </div>
+                    </a>
+                    <a class="top" href="">
+                        <div class="icon">
+                            <img src="img/12.png" alt="">
+                            <div class="gcon">
+                                <div class="tcon uinfo">
+                                    <div class="icit">1</div>
+                                </div>
+                                <div class="mcon uinfo">
+                                    <div class="icit">1.20.1</div>
+                                    <div class="icit">выживание</div>
+                                </div>
+                            </div>
+                            <div class="mcinfo">
+                                <div class="servertext">PolitBuild - военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей</div>
+                                <div class="servertegs">
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dinfo">
+                            <div>PolitBuild</div>
+                            <div class="people"><i class="fa-solid fa-user"></i>1000</div>
+                        </div>
+                    </a>
+                    <a class="top" href="">
+                        <div class="icon">
+                            <img src="img/12.png" alt="">
+                            <div class="gcon">
+                                <div class="tcon uinfo">
+                                    <div class="icit">1</div>
+                                </div>
+                                <div class="mcon uinfo">
+                                    <div class="icit">1.20.1</div>
+                                    <div class="icit">выживание</div>
+                                </div>
+                            </div>
+                            <div class="mcinfo">
+                                <div class="servertext">PolitBuild - военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей</div>
+                                <div class="servertegs">
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dinfo">
+                            <div>PolitBuild</div>
+                            <div class="people"><i class="fa-solid fa-user"></i>1000</div>
+                        </div>
+                    </a>
+                    <a class="top" href="">
+                        <div class="icon">
+                            <img src="img/12.png" alt="">
+                            <div class="gcon">
+                                <div class="tcon uinfo">
+                                    <div class="icit">1</div>
+                                </div>
+                                <div class="mcon uinfo">
+                                    <div class="icit">1.20.1</div>
+                                    <div class="icit">выживание</div>
+                                </div>
+                            </div>
+                            <div class="mcinfo">
+                                <div class="servertext">PolitBuild - военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей</div>
+                                <div class="servertegs">
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dinfo">
+                            <div>PolitBuild</div>
+                            <div class="people"><i class="fa-solid fa-user"></i>1000</div>
+                        </div>
+                    </a>
+                    <a class="top" href="">
+                        <div class="icon">
+                            <img src="img/12.png" alt="">
+                            <div class="gcon">
+                                <div class="tcon uinfo">
+                                    <div class="icit">1</div>
+                                </div>
+                                <div class="mcon uinfo">
+                                    <div class="icit">1.20.1</div>
+                                    <div class="icit">выживание</div>
+                                </div>
+                            </div>
+                            <div class="mcinfo">
+                                <div class="servertext">PolitBuild - военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей военно политический сервер с множеством игровых механик которые добавят новый интересный геймплей</div>
+                                <div class="servertegs">
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                    <div class="steg" data-tippy-content="1488 балов">выживание</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dinfo">
+                            <div>PolitBuild</div>
+                            <div class="people"><i class="fa-solid fa-user"></i>1000</div>
+                        </div>
+                    </a>
+                </section>
+            </div>
+        </div>
+        <script src="js/preload.js"></script>
+        <script src="js/components.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script>
+            $(document).ready(function() {
+                $('.dinfo').flowtype({
+                    fontRatio: 14
+                });
+                $('.uinfo').flowtype({
+                    fontRatio: 14
+                });
+                $('.mcinfo').flowtype({
+                    fontRatio: 16
+                });
+            });
+        </script>
+        <script>
+            tippy('[data-tippy-content]', {
+                followCursor: 'horizontal',
+            });
+        </script>
+        <script>
+            const slider = document.getElementById('versionSlider');
+            const versionNumber = document.getElementById('versionNumber');
+
+            // Все основные версии Minecraft Java Edition
+            const versions = [
+                "1.6.1", "1.6.2", "1.6.4",
+                "1.7.2", "1.7.4", "1.7.5", "1.7.6", "1.7.7", "1.7.8", "1.7.9", "1.7.10",
+                "1.8", "1.8.1", "1.8.2", "1.8.3", "1.8.4", "1.8.5", "1.8.6", "1.8.7", "1.8.8", "1.8.9",
+                "1.9", "1.9.1", "1.9.2", "1.9.3", "1.9.4",
+                "1.10", "1.10.1", "1.10.2",
+                "1.11", "1.11.1", "1.11.2",
+                "1.12", "1.12.1", "1.12.2",
+                "1.13", "1.13.1", "1.13.2",
+                "1.14", "1.14.1", "1.14.2", "1.14.3", "1.14.4",
+                "1.15", "1.15.1", "1.15.2",
+                "1.16", "1.16.1", "1.16.2", "1.16.3", "1.16.4", "1.16.5",
+                "1.17", "1.17.1",
+                "1.18", "1.18.1", "1.18.2",
+                "1.19", "1.19.1", "1.19.2", "1.19.3", "1.19.4",
+                "1.20", "1.20.1", "1.20.2", "1.20.3", "1.20.4", "1.20.5", "1.20.6",
+                "1.21", "1.21.1", "1.21.2", "1.21.3", "1.21.4", "1.21.5", "1.21.6", "1.21.7",
+                "ВСЕ"
+            ];
+
+            function updateVersion() {
+                const index = parseInt(slider.value);
+                versionNumber.textContent = versions[index];
+            }
+
+            // Основные события
+            slider.addEventListener('input', updateVersion);
+            slider.addEventListener('change', updateVersion);
+
+            // Только предотвращаем скролл страницы, но разрешаем перемещение ползунка
+            slider.addEventListener('touchstart', function(e) {
+                e.stopPropagation();
+            });
+
+            slider.addEventListener('touchmove', function(e) {
+                // Разрешаем событие для самого слайдера, но предотвращаем всплытие
+                e.stopPropagation();
+            });
+
+            // Убираем touchend, он не нужен
+
+            // Предотвращаем скролл колесиком мыши на слайдере
+            slider.addEventListener('wheel', function(e) {
+                e.preventDefault();
+            }, { passive: false });
+
+            updateVersion();
+        </script>
+        <script>
+            const tegbtn = document.getElementById('tegbtn');
+            const tegscon = document.getElementById('tegscon');
+            const filtercon = document.getElementById('filtercon');
+
+            tegbtn.addEventListener('click', function() {
+                tegscon.classList.toggle('active');
+            });
+
+            // Не закрываем, если мышь переходит на filtercon
+            tegscon.addEventListener('mouseleave', function(event) {
+                setTimeout(() => {
+                    const isHoveringFiltercon = filtercon.matches(':hover');
+                    const isHoveringTegscon = tegscon.matches(':hover');
+                    
+                    if (!isHoveringFiltercon && !isHoveringTegscon) {
+                        tegscon.classList.remove('active');
+                    }
+                }, 50);
+            });
+
+            // Закрываем только при клике полностью вне всех связанных элементов
+            document.addEventListener('click', function(event) {
+                if (!tegbtn.contains(event.target) && 
+                    !tegscon.contains(event.target) && 
+                    !filtercon.contains(event.target)) {
+                    tegscon.classList.remove('active');
+                }
+            });
+
+            tegscon.addEventListener('click', function(event) {
+                event.stopPropagation();
+            });
+        </script>
+    </body>
+    <script src="../process_app/renderer.js"></script>
+</html>
+

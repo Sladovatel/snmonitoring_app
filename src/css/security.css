@@ -1,0 +1,66 @@
+.edit-panel {
+    height: auto;
+    display: grid;
+    gap: 1rem;
+    flex: 1;
+}
+
+.pce {
+    border-radius: 15px;
+    background: var(--bci);
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+.pname {
+    display: inline-flex;
+    gap: 1rem;
+}
+
+.pname img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: solid 2px rgb(0, 0, 0);
+}
+
+.pmailpas {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pmailpas h5 {
+    color: rgb(163, 163, 163);
+}
+
+.ininfo {
+    background: var(--bcm);
+    color: white;
+    border-radius: 8px;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+.scode {
+    width: 4.5rem;
+    text-align: center;
+}
+
+.savemp {
+    width: min-content;
+    height: 2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0.5rem;
+    background: var(--bcm);
+    cursor: pointer;
+}
+
+.savemp:hover {
+    background: #686868;
+}
