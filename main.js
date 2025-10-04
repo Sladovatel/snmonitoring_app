@@ -1,6 +1,11 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('node:path')
 
+let updateElectronApp = require('update-electron-app');
+if (updateElectronApp.default) {
+    updateElectronApp = updateElectronApp.default;
+}
+
 let win;
 
 const createWindow = () => {
@@ -9,7 +14,9 @@ const createWindow = () => {
     height: 800,
     icon: "src/img/logo.png",
     webPreferences: {
-      preload: path.join(__dirname, 'process_app/preload.js')
+      preload: path.join(__dirname, 'process_app/preload.js'),
+      nodeIntegration: false,
+      contextIsolation: true
     }
   })
 

@@ -1,6 +1,6 @@
 {
   "name": "sn_app",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Desktop app",
   "main": "main.js",
   "scripts": {
@@ -9,6 +9,10 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sladovatel/snmonitoring_app.git" 
   },
   "author": "PolitWineTeam",
   "license": "ISC",
