@@ -1,23 +1,14 @@
 {
   "name": "sn_app",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Desktop app",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "package": "electron-builder",
+    "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish"
-  },
-  "build": {
-    "publish": [
-      {
-        "provider": "github",
-        "owner": "Sladovatel",
-        "repo": "snmonitoring_app"
-      }
-    ]
   },
   "author": "PolitWineTeam",
   "license": "ISC",

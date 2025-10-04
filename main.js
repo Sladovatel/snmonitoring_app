@@ -1,8 +1,5 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('node:path')
-const {autoUpdater} = require('electron-updater')()
-const log = require('electron-log')
-
 
 let win;
 
@@ -23,23 +20,11 @@ const createWindow = () => {
 app.on('ready', () => {
   createWindow()
 
-  autoUpdater.checkForUpdatesAndNotofy()
-
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) {
       createWindow()
     }
   })
-})
-
-autoUpdater.on("update-avalible",()=>{
-    log.info("update-avalible")
-})
-autoUpdater.on("cheking-for-update",()=>{
-    log.info("cheking-for-update")
-})
-autoUpdater.on("download-progress",()=>{
-    log.info("download-progress")
 })
 
 app.on('window-all-closed', () => {
