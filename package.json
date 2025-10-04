@@ -1,6 +1,6 @@
 {
   "name": "sn_app",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Desktop app",
   "main": "main.js",
   "scripts": {
