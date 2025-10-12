@@ -1,5 +1,0 @@
-AddDefaultCharset UTF-8
-
-RewriteEngine On
-
-RewriteRule ^id/([0-9]+) profile.php?id=$1
